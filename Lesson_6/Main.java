@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Main {
 
-    private final static int maxDepth = 4;
+    private final static int maxDepth = 6;
     private final static int numOfTrees = 20;
 
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class Main {
         tree.insert(person);
     }
 
-    private static void setTree(Tree tree) { // задаем дерево согласно условию
+    private static void setTree(Tree tree) {
         int numOfElements = (int) (Math.pow(2, maxDepth) - 1);
         for (int i = 0; i < 2 * numOfElements; i ++) {
             if (maxDepth(tree.getNodeRoot()) < maxDepth) { // проверка глубины

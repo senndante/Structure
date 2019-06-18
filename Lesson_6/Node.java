@@ -61,15 +61,7 @@ public class Node {
         return leftChild == null && rightChild == null;
     }
 
-    /**
-     * XOR:
-     * 1^1 = 0
-     * 1^0 = 1
-     * 0^1 = 1
-     * 0^0 = 0
-     *
-     * @return
-     */
+
     public boolean hasOnlyOneChild() {
 
         return leftChild != null ^ rightChild != null;
